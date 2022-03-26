@@ -1,0 +1,29 @@
+.Carousel {
+  max-width:1600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.rec-dot {
+  display: none;
+}
+
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+
+.items {
+  height: auto;
+  max-width: 70px;
+}
+
+.rec.rec-arrow {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.rec.rec-arrow:hover {
+  border-radius: 50%;
+}

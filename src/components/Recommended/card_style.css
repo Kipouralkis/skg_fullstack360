@@ -1,0 +1,55 @@
+/* is for the background behind the cards */
+
+.card{
+    /*width: 20em;*/
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: auto;
+    height: auto;
+    width: 280px;
+}
+
+.overlay {
+    padding: 2em !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    color: white;
+    vertical-align: middle;
+  }
+  
+  
+.card:hover .overlay{
+    opacity: 0.8;
+}
+
+.card-text{
+    font-size: .9em;
+    padding: 0.4em 0.4em;
+    position: absolute;
+    bottom: 0;
+    text-align: bottom;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.bottom-text{
+    font-size: .9em;
+    padding: 0.4em 0.4em;
+    position: absolute;
+    bottom: 0;
+    text-align: bottom;
+}
+
+.card-title{
+    padding: 0.1em !important;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
