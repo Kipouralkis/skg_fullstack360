@@ -11,6 +11,10 @@ body {
   --dark-accent: #495882;
   --dark-shades: #212636;
 
+  --light:#5CE0D8;
+  --dark: #01345B;
+  --accent: #FFCF43;
+
   height: 3000px;
 }
 
