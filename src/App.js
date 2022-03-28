@@ -4,12 +4,15 @@ import Navbar from './components/Menu/Navbar/Navbar';
 import Header from './components/Header/Header'
 import Searchbar from './components/SearchBar/SearchBar'
 
+
 function App() {
   return (
-    <div>
-      <Header />
-      <Navbar />
-      <Searchbar />
+    <div className='App'>
+      <div className='header-div'>
+        <Header />
+        <Navbar />
+        <Searchbar />
+      </div>
       <Carousel />
     </div>
     
