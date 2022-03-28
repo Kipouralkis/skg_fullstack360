@@ -1,6 +1,6 @@
 .Header {
     text-align: center;
-    background-color: var(--dark-accent);
+    background-color: var(--dark);
     color: var(--light-shades);
     position: absolute;
     z-index: 999;
