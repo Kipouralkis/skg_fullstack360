@@ -1,6 +1,6 @@
 .cont {
-    /*background: rgb(121, 210, 252);*/
-    background: var(--main-color);
+    background: rgb(121, 210, 252);
+    /*background: var(--main-color);*/
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 40px;
     margin: 50px;

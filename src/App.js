@@ -1,21 +1,25 @@
-import './App.css';
-import Carousel from './components/Recommended/Carousel';
-import Navbar from './components/Menu/Navbar/Navbar';
-import Header from './components/Header/Header'
-import Searchbar from './components/SearchBar/SearchBar'
-
+import "./App.css";
+import Carousel from "./components/Recommended/Carousel";
+import Navbar from "./components/Menu/Navbar/Navbar";
+import Header from "./components/Header/Header";
+import Searchbar from "./components/SearchBar/SearchBar";
 
 function App() {
   return (
-    <div className='App'>
-      <div className='header-div'>
+    <div className="App">
+      {/* HEADER */}
+      <div className="header-div">
         <Header />
-        <Navbar />
+        <Navbar className />
         <Searchbar />
       </div>
-      <Carousel />
+
+      {/*CONTENT */}
+      <div id="wrapper">
+        <h1 className="heading"> Welcome to ~GreatPageName~</h1>
+        <Carousel />
+      </div>
     </div>
-    
   );
 }
 
