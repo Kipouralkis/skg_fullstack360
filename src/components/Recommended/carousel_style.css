@@ -1,9 +1,13 @@
 .Carousel {
-  max-width:1600px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#wrapper{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 button.rec-dot {
@@ -27,3 +31,8 @@ button.rec-dot {
 .rec.rec-arrow:hover {
   border-radius: 50%;
 }
+
+.h2{
+  text-align: left;
+}
+

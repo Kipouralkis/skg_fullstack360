@@ -7,7 +7,7 @@ function Header() {
     <div className="Header">
       <h1>Welcome to my page</h1>
       <h2>Start editing to see some magic happen!</h2>
-      <form onsubmit="console.log('You clicked submit.'); return false">
+      <form onSubmit="console.log('You clicked submit.'); return false">
         <button type="submit">Login</button>
       </form>
     </div>
