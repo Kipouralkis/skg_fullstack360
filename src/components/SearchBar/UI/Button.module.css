@@ -1,21 +1,22 @@
 .button {
-    font: inherit;
-    border: 1px solid var(--dark-shades); /* #4f005f; */
-    background: var(--dark-shades);/* #540164; */
-    color: white;
-    padding: 0.25rem 1rem;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  
-  .button:hover,
-  .button:active {
-    background: var(--accent); /* #741188; */
-    border-color: var(--accent); /* #741188; */
-    color: var(--dark-shades);
-  }
-  
-  .button:focus {
-    outline: none;
-  }
-  
+  font: inherit;
+  border: 1px solid var(--dark-shades); /* #4f005f; */
+  background: var(--dark-shades); /* #540164; */
+  color: rgb(255, 255, 255);
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  position: absolute;
+  right: 80px;
+}
+
+.button:hover,
+.button:active {
+  background: var(--accent); /* #741188; */
+  border-color: var(--accent); /* #741188; */
+  color: var(--dark-shades);
+}
+
+.button:focus {
+  outline: none;
+}

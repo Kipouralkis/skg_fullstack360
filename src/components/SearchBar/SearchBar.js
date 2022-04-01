@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "./UI/Button";
 import Container from "./UI/Container";
+import classes from "./Container.module.css";
 
 const SearchBar = props => {
   const [enteredLoc, setEnteredLoc] = useState("");
@@ -37,7 +38,7 @@ const SearchBar = props => {
     setEnteredEur(e.target.value);
   };
   return (
-    <Container>
+    <Container className={classes.search}>
       <form onSubmit={addSearchHandler}>
         <label htmlFor="location">Location:</label>
         <input

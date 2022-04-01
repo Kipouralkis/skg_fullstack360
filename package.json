@@ -13,13 +13,8 @@
     "react-icons": "^4.3.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.2",
-<<<<<<< HEAD
     "react-scripts": "^5.0.0",
     "react-touch-carousel": "^0.10.2",
-=======
-    "react-scripts": "5.0.0",
-    "redux": "^4.1.2",
->>>>>>> f424b3eb849b63c0d7d1aa3f3a2fe2033b8abb72
     "rerousel": "^0.1.9",
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"

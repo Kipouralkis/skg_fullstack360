@@ -1,15 +1,18 @@
 .cont {
-    background: rgb(121, 210, 252);
-    /*background: var(--main-color);*/
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-    border-radius: 40px;
-    margin: 50px;
-    padding: 20px;
-  }
-  
-  .cont label {
-    display: inline;
-    font-weight: bolder;
-    margin-bottom: 50px;
-  }
-  
+  background: rgb(121, 210, 252);
+  /*background: var(--main-color);*/
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 40px;
+  margin: 50px;
+  padding: 20px;
+}
+
+.cont label {
+  display: inline;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.search {
+  position: fixed;
+}
