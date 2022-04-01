@@ -14,5 +14,10 @@
 }
 
 .search {
-  position: fixed;
+  position: relative;
+  top: 225px;
+}
+
+.inp {
+  border-radius: 10px;
 }

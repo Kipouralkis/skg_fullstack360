@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Button from "./UI/Button";
+import ButtonS from "./UI/ButtonS";
 import Container from "./UI/Container";
-import classes from "./Container.module.css";
+import classes from "./UI/Container.module.css";
 
 const SearchBar = props => {
   const [enteredLoc, setEnteredLoc] = useState("");
@@ -40,31 +40,35 @@ const SearchBar = props => {
   return (
     <Container className={classes.search}>
       <form onSubmit={addSearchHandler}>
-        <label htmlFor="location">Location:</label>
+        <label htmlFor="location"></label>
         <input
           id="location"
           type="text"
           placeholder="Location"
           value={enteredLoc}
           onChange={locationChangeHandler}
+          className={classes.inp}
         />
-        <label htmlFor="expanse">Expanse</label>
+        <label htmlFor="expanse"></label>
         <input
           id="expanse"
           type="text"
           placeholder="m2"
           value={enteredExpanse}
           onChange={expanseChangeHandler}
+          className={classes.inp}
         />
-        <label htmlFor="euro">Euro</label>
+        <label htmlFor="euro"></label>
         <input
           id="euro"
           type="number"
           placeholder="Euro €"
           value={enteredEur}
           onChange={euroChangeHandler}
+          min="0"
+          className={classes.inp}
         />
-        <Button type="submit">Submit</Button>
+        <ButtonS type="submit">Submit </ButtonS>
       </form>
     </Container>
   );

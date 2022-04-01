@@ -1,16 +1,16 @@
 import React from "react";
 import classes from "./Button.module.css";
 
-const Button = props => {
+const ButtonS = props => {
   return (
     <button
       className={classes.button}
       type={props.type || "button"}
       onClick={props.onClick}
     >
-      Submit 
+      Submit
     </button>
   );
 };
 
-export default Button;
+export default ButtonS;
