@@ -44,5 +44,11 @@ body {
   left:0;
   right:0;
   padding: 50px;
+  margin-bottom: 100px;
   background-color: var(--light-shades);
+}
+
+.subtitle{
+  font-size: 23px;
+  opacity: 0.8;
 }

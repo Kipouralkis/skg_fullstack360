@@ -1,0 +1,39 @@
+ul, ol{
+    list-style: none;
+}
+
+.list-container{
+    padding: 2em;
+}
+
+.new-li {
+    background: var(--green-blue);
+    color: #fff;
+    counter-increment: myCounter;
+    margin: 0 0 30px 0;
+    padding: 13px;
+    position: relative;
+    top: 1em;
+    border-radius: 5px;
+    padding-left: 2em;
+}
+.new-li:before{
+    content: counter(myCounter, decimal-leading-zero);
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    background-color:  white;
+    padding:12px;
+    font-weight: bold;
+    position: absolute; 
+    top: 0;
+    left: -40px;
+    border-radius: 50%;
+    color: var(--dark-shades);
+}
+
+
+.new-li:nth-child(even){
+    background-color: #434A54;
+}

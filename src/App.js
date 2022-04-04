@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Heading2 from "./components/Headings/Heading2";
 import Heading1 from "./components/Headings/Heading1";
 import Services from "./components/Services/Services";
+import List from "./components/List/List";
 
 function App() {
   // const fetchHouses = () => {
@@ -37,6 +38,12 @@ function App() {
           <Heading1 title="Our Services:"></Heading1>
           <Services />
         </div>
+      </div>
+
+      {/*Tips section*/}
+      <div className="wrapper">
+        <Heading2 title={["Our Tips ", <span className="subtitle">For Finding Your Perfect House</span>]}></Heading2>
+        <List/>
       </div>
 
       <Footer />
