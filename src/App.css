@@ -5,7 +5,7 @@ body {
   --green-blue: #61a4bc;
   --beige: #f7e2e2;
 
-  --light-shades: #e1d9de;
+  --light-shades: #f3f6fc;
   --light-accent: #1f77c8;
   --main-color: #57d0dd;
   --dark-accent: #495882;
@@ -14,8 +14,6 @@ body {
   --light: #5ce0d8;
   --dark: #01345b;
   --accent: #ffcf43;
-
-  height: 1000px;
 }
 
 * {
@@ -25,7 +23,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-#wrapper {
+.wrapper {
   width: 1600px;
   margin: auto;
 }
@@ -38,5 +36,13 @@ body {
 
 .heading {
   padding: 100px;
+  padding-top: 4em;
   text-align: center;
+}
+
+.section {
+  left:0;
+  right:0;
+  padding: 50px;
+  background-color: var(--light-shades);
 }

@@ -1,0 +1,55 @@
+/* Card Styles */
+
+
+.service-card{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 0.5em;
+    padding-top: 1em;
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    border: 1px solid var(--dark-accent);
+    transition: box-shadow .3s;
+}
+
+.service-card:hover {
+    box-shadow: 0px 0px 15px rgba(33,33,33,.35); 
+  }
+
+.service-text{
+    font-size: .9em;
+    padding: 1em;
+    padding-top: 0 !important;
+    bottom: 0;
+    text-align: center;
+    color:black;
+}
+
+
+.service-title{
+    text-decoration: wavy;
+    padding: 0.1em;
+    padding-top: 1em;
+    color: var(--dark);
+    text-align: center;
+    font-weight: bold;
+}
+
+.link{
+    text-align: center;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.link:hover{
+    color: var(--light-accent);
+}
+
+hr{
+    width: 50%;
+    margin-left: 25% !important;
+}

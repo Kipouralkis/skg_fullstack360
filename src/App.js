@@ -3,8 +3,10 @@ import Carousel from "./components/Recommended/Carousel";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import Searchbar from "./components/SearchBar/SearchBar";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
 import Heading2 from "./components/Headings/Heading2";
+import Heading1 from "./components/Headings/Heading1";
+import Services from "./components/Services/Services";
 
 function App() {
   // const fetchHouses = () => {
@@ -21,11 +23,22 @@ function App() {
       </div>
 
       {/*CONTENT */}
-      <div id="wrapper">
+      <div className="wrapper">
         <h1 className="heading"> Welcome to ~GreatPageName~</h1>
+
+        {/*Recommended section*/}
         <Heading2 title="Our Recommendations:"></Heading2>
         <Carousel />
       </div>
+
+      {/* Services Section*/}
+      <div className="section">
+        <div className="wrapper">
+          <Heading1 title="Our Services:"></Heading1>
+          <Services />
+        </div>
+      </div>
+
       <Footer />
     </div>
   );

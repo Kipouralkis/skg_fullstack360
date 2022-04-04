@@ -1,7 +1,7 @@
 .color1{
     float:left;
     height:1px;
-    width:30%;
+    width:15%;
     border-bottom: solid 2px var(--dark);
 }
 
@@ -16,7 +16,8 @@
     float: left;
     height: 1px;
     width: 85%;
-    border-bottom: solid 2px #cccc;
+    border-bottom: solid 2px var(--dark);
+    opacity: 0.2;
 }
 
 .head1{
