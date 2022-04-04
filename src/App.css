@@ -1,42 +1,42 @@
 body {
   --primary-color: #000;
-  --dark-blue: #1A132F;
-  --gray-blue: #5B7DB1;
-  --green-blue: #61A4BC;
-  --beige: #F7E2E2;
+  --dark-blue: #1a132f;
+  --gray-blue: #5b7db1;
+  --green-blue: #61a4bc;
+  --beige: #f7e2e2;
 
-  --light-shades: #E1D9DE;
-  --light-accent: #1F77C8;
-  --main-color: #57D0DD;
+  --light-shades: #e1d9de;
+  --light-accent: #1f77c8;
+  --main-color: #57d0dd;
   --dark-accent: #495882;
   --dark-shades: #212636;
 
-  --light:#5CE0D8;
-  --dark: #01345B;
-  --accent: #FFCF43;
+  --light: #5ce0d8;
+  --dark: #01345b;
+  --accent: #ffcf43;
 
   height: 1000px;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
 
-  #wrapper{
-    width:1600px;
-    margin: auto;
-  }
+#wrapper {
+  width: 1600px;
+  margin: auto;
+}
 
-  .header-div{
-    background-image: url('components/assets/new-york-g8864bae9d_1920.jpg');
-    background-attachment: fixed;
-    padding-bottom: 100px;
-  }
+.header-div {
+  background-image: url("components/assets/new-york-g8864bae9d_1920.jpg");
+  background-attachment: fixed;
+  padding-bottom: 100px;
+}
 
-  .heading{
-    padding-top: 100px;
-    text-align: center;
-  }
+.heading {
+  padding: 100px;
+  text-align: center;
+}

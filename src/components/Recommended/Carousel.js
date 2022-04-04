@@ -15,7 +15,6 @@ const breakPoints = [
 function CarouselE() {
   return (
     <div id="wrapper">
-    <h2>Our Recommendations:</h2>
       <div className="Carousel">
         <Carousel breakPoints={breakPoints}>
           <Card2 title="Title 1"/>
