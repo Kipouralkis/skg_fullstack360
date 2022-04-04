@@ -11,11 +11,13 @@
   display: inline;
   font-weight: bolder;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .search {
   position: relative;
   top: 225px;
+  justify-content: center;
 }
 
 .inp {
