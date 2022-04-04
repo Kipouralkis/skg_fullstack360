@@ -15,7 +15,7 @@ body {
   --dark: #01345B;
   --accent: #FFCF43;
 
-  height: 3000px;
+  height: 1000px;
 }
 
 *{
@@ -37,6 +37,6 @@ body {
   }
 
   .heading{
-    padding-top: 50px;
+    padding-top: 100px;
     text-align: center;
   }

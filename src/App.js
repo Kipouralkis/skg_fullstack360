@@ -3,6 +3,7 @@ import Carousel from "./components/Recommended/Carousel";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import Searchbar from "./components/SearchBar/SearchBar";
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <h1 className="heading"> Welcome to ~GreatPageName~</h1>
         <Carousel />
       </div>
+      <Footer />
     </div>
   );
 }
