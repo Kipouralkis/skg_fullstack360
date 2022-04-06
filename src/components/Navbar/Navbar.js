@@ -15,7 +15,6 @@ class Navbar extends Component{
         return(
             <nav className="NavbarItems">
               <link to='/' className='navbar-logo'></link>
-              <h1 className='navbar-logo'><i class="fas fa-sign-hanging"></i></h1>
               <div className='menu-icon'onClick={this.handleClick}>
                    <i className={this.state.clicked ? "fas fa-xmark" : 'fas fa-bars'}></i>
                 </div>
