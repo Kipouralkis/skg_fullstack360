@@ -12,8 +12,8 @@
 
 .button:hover,
 .button:active {
-  background: var(--accent); /* #741188; */
-  border-color: var(--accent); /* #741188; */
+  background: var(--green-blue); /* #741188; */
+  border-color: var(--green-blue); /* #741188; */
   color: var(--dark-shades);
 }
 

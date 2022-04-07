@@ -1,7 +1,7 @@
 .cont {
-  background: rgb(120, 125, 128);
+  background: rgba(126, 143, 153, 0.2);
   /*background: var(--main-color);*/
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px rgba(0, 0, 3, 0.3);
   border-radius: 40px;
   margin: 50px;
   padding: 20px;
@@ -12,11 +12,12 @@
   font-weight: bolder;
   margin-bottom: 50px;
   justify-content: center;
+  padding-right: 10px;
 }
 
 .search {
   position: relative;
-  top: 225px;
+  top: 20px;
   justify-content: center;
 }
 

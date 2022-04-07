@@ -26,16 +26,18 @@
     justify-content: left;
     margin-right: 18rem;
     margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .nav-links {
     color: var(--dark-shades); /* rgb(254, 254, 255); */
     text-decoration: none;
-    padding: 0.5rem, 1rem;
+    padding: 1rem;
 }
 
 .nav-links:hover {
-    background-color: rgb(201, 201, 238);
+    background-color: var(--light-shades);/*rgb(201, 201, 238);*/
+    padding: 1rem;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
