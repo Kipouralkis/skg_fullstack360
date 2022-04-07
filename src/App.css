@@ -24,7 +24,8 @@ body {
 }
 
 .wrapper {
-  width: 1600px;
+  max-width: 1600px;
+  padding:5%;
   margin: auto;
 }
 
@@ -43,7 +44,6 @@ body {
 .section {
   left:0;
   right:0;
-  padding: 50px;
   margin-bottom: 100px;
   background-color: var(--light-shades);
 }

@@ -5,9 +5,8 @@
   justify-content: center;
 }
 
-#wrapper{
-  padding-top: 50px;
-  padding-bottom: 50px;
+#carousel-wrapper{
+  padding: 50px;
 }
 
 button.rec-dot {
