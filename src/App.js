@@ -8,12 +8,37 @@ import Heading2 from "./components/Headings/Heading2";
 import Heading1 from "./components/Headings/Heading1";
 import Services from "./components/Services/Services";
 import List from "./components/List/List";
+import PropertyList from "./components/propertyList"
+
+import {useState, useEffect} from 'react';
+import axios from 'axios';
+
 
 function App() {
-  // const fetchHouses = () => {
-  //   fetch("URL you wanna sent a request");
-  //   // whenever this function is called it's send a request
-  // };
+  
+const [data, setData] = useState([]);
+
+useEffect(()=> {
+  const fetchData = async ()=>{
+
+  try {
+    const response = await axios.get('http://localhost:5000/api/property/all');
+    setData(response.data);
+  } catch (err) {
+    if(err.response){
+      console.log(err.response.data);
+    } else {
+      console.log(`Error: ${err.message}`);
+    }
+  }
+  }
+  fetchData();
+  
+},[])
+
+
+
+
   return (
     <div className="App">
       {/* HEADER */}
@@ -29,8 +54,15 @@ function App() {
 
         {/*Recommended section*/}
         <Heading2 title="Our Recommendations:"></Heading2>
-        <Carousel />
+        <Carousel data={data}/>
       </div>
+
+      {/*PropertyList */}
+      <div className="wrapper">
+            <Heading1 title="PropertyList:"></Heading1>
+          </div>
+      
+        <PropertyList data={data} />
 
       {/* Services Section*/}
       <div className="section">
