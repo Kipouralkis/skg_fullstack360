@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import Card2 from "./Card2";
+import Card2 from "../../../../cards/src/components/Recommended/Card2";
 import "./carousel_style.css";
 
 const breakPoints = [
@@ -12,21 +12,17 @@ const breakPoints = [
 
 
 
-function CarouselE() {
+function CarouselE({data}) {
   return (
     <div id="carousel-wrapper">
       <div className="Carousel">
+
         <Carousel breakPoints={breakPoints}>
-          <Card2 title="Title 1"/>
-          <Card2 title="Title 2"/>
-          <Card2 title="Title 3"/>
-          <Card2 title="Title 4"/>
-          <Card2 title="Title 5"/>
-          <Card2 title="Title 6"/>
-          <Card2 title="Title 7"/>
-          <Card2 title="Title 8"/>
-          <Card2 title="Title 9"/>
-          <Card2 title="Title 10"/>
+        
+        {data.slice(1,6).map(property => (
+          <Card2 key={property.id} property={property}/>
+          ))}  
+               
         </Carousel>
       </div>
     </div>
