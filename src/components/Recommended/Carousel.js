@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import Card2 from "../../../../cards/src/components/Recommended/Card2";
+import Card2 from "./Card2"
 import "./carousel_style.css";
 
 const breakPoints = [
