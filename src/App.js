@@ -10,6 +10,7 @@ import ForRent from "./Pages/ForRent";
 
 
 function App() {
+  //all data
   const [data, setData] = useState([]);
 
   useEffect(() => {

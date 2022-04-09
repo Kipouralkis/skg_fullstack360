@@ -6,8 +6,6 @@ import house from './assets/house.jpg'
 const propertyList = ({property}) => {
 
 
-
-
   return (
 
     <Card className='card' style={{ width: '13rem'}}>
