@@ -19,6 +19,7 @@ const SearchBarContainer = styled(motion.div)`
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 0px 2px 12px 3px rgba(0, 0, 0, 0.14);
+  
 `;
 
 const SearchInputContainer = styled.div`

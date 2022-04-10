@@ -46,7 +46,7 @@ export function TvShow(props) {
         <img src={thumbanilSrc} />
       </Thumbnail>
       <Name>{name}</Name>
-      <Rating>{rating || "N/A"}</Rating>
+      <Rating>{rating || "N/A"} euro</Rating>
     </TvShowContainer>
   );
 }

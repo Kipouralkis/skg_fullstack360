@@ -34,7 +34,7 @@ function Home({data}) {
         <div className="header-div">
           <Header />
           <Navbar className />
-          {/* <Searchbar /> // onclick={fetchHouses}  */}
+          
            <AppContainer>
             <SearchBar data={data}/>
            </AppContainer>
@@ -42,7 +42,7 @@ function Home({data}) {
 
         {/*CONTENT */}
         <div className="wrapper">
-          <h1 className="heading"> Welcome to ~GreatPageName~</h1>
+          <h1 className="heading"> Welcome to RealEstate SKGCODE 9</h1>
 
           {/*Recommended section*/}
           <Heading2 title="Our Recommendations:"></Heading2>

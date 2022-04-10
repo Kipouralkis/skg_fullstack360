@@ -7,13 +7,13 @@ export const MenuItems = [
     },
     {
         title: 'For sale',
-        url: '/for_sale',
+        url: '/sale',
         cName: 'nav-links'
 
     },
     {
         title: 'For rent',
-        url: '/for_rent',
+        url: '/rent',
         cName: 'nav-links'
 
     }

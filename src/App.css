@@ -30,9 +30,10 @@ body {
 }
 
 .header-div {
-  background-image: url("components/assets/new-york-g8864bae9d_1920.jpg");
+  background-image: url("components/assets/new-york-g8864bae9d_1920.jpg"); 
   background-attachment: fixed;
-  padding-bottom: 100px;
+  padding-bottom: 100px; 
+  
 }
 
 .heading {
