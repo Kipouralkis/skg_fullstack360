@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-#carousel-wrapper{
+#carousel-wrapper {
   padding: 50px;
 }
 
@@ -31,7 +31,6 @@ button.rec-dot {
   border-radius: 50%;
 }
 
-.h2{
+.h2 {
   text-align: left;
 }
-

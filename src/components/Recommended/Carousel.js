@@ -19,7 +19,7 @@ function CarouselE({data}) {
 
         <Carousel breakPoints={breakPoints}>
         
-        {data.slice(1,6).map(property => (
+        {data.slice(3,8).map(property => (
           <Card2 key={property.id} property={property}/>
           ))}  
                

@@ -1,35 +1,30 @@
-import React from 'react';
-import img1 from '../assets/p5.jpg'
-import './card_style.css';
-import house from './../assets/house.jpg'
+import React from "react";
+import img1 from "../assets/p5.jpg";
+import "./card_style.css";
+import house from "./../assets/house.jpg";
 
-function Card2({property}) {
+function Card2({ property }) {
+  return (
+    <div>
+      <div className="card">
+        <img src={property.image} alt="" className="card-image" />
+        <div className="card-img-overlay">
+          <h5 className="rec-card-title">
+            {property.category} {property.address}
+          </h5>
+          <p className="rec-card-text">
+            {property.price} € for {property.for}<br></br>
+            {property.description.substr(0, 33)}
+          </p>
 
-    return (
-      <div>
-        <div className="card">
-            <img src={house} alt="" className="card-img" />
-            <div className="card-img-overlay">
-              <h5 className="card-title">{property.propertytitle}</h5>
-              <p className="card-text">
-                {property.description}
-              </p>
-
-              {/*overlay*/}
-              <div className='overlay'>
-              <h5 className="card-title">{property.propertytitle}</h5>
-              <p className="">
-                {property.description}
-              </p>
-              </div>
-
-
-            </div>
+          {/*overlay*/}
+          <div className="overlay">
+            <p className="overlay-text">{property.description}</p>
+          </div>
         </div>
-        <p className="bottom-text">Posted on: -Date-</p>
       </div>
-    );
-
+    </div>
+  );
 }
 
 export default Card2;

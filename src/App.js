@@ -2,6 +2,7 @@
 import "./App.css";
 import Home from "./Pages/Home"
 
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -9,6 +10,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import ForSale from "./Pages/ForSale";
 import ForRent from "./Pages/ForRent";
 import Chatbot from 'react-simple-chatbot';
+
 
 function App() {
   //all data
@@ -35,10 +37,11 @@ function App() {
   return (
     
     <Router>
+   
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/for_sale" element={<ForSale />}/>
-        <Route path="/for_rent" element={<ForRent />}/>
+        <Route path="/" element={<Home data={data}/>}/>
+        <Route path="/for_sale" element={<ForSale data={data} />}/>
+        <Route path="/for_rent" element={<ForRent data={data} />}/>
       </Routes>
       <Chatbot
   steps={[

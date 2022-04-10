@@ -1,34 +1,24 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
-import Searchbar from "../components/SearchBar/SearchBar";
+
 import Heading1 from "../components/Headings/Heading1";
 import PropertyList from "../components/propertyList";
 import Footer from "../components/Footer/Footer";
+import { SearchBar } from "../components/SearchBarTemp";
+import styled from "styled-components";
 
-import { useState, useEffect } from "react";
-import axios from "axios";
 
-function Home() {
-  const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "http://localhost:5000/api/property/all"
-        );
-        setData(response.data);
-      } catch (err) {
-        if (err.response) {
-          console.log(err.response.data);
-        } else {
-          console.log(`Error: ${err.message}`);
-        }
-      }
-    };
-    fetchData();
-  }, []);
+function Home({data}) {
+  
+  const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8em;
+`;
 
   //Filter results
   const result = data.filter((d) => d.for === "rent");
@@ -40,17 +30,18 @@ function Home() {
       <div className="header-div">
         <Header />
         <Navbar className />
-        <Searchbar /> {/* // onclick={fetchHouses}  */}
+         <AppContainer>
+            <SearchBar data={data}/>
+           </AppContainer>
       </div>
 
       {/*CONTENT */}
 
       {/*PropertyList */}
       <div className="wrapper">
-        <Heading1 title="PropertyList:"></Heading1>
+        <Heading1 title="Houses for Rent:"></Heading1>
+        <PropertyList data={result} />
       </div>
-
-      <PropertyList data={result} />
 
       <Footer />
     </div>
