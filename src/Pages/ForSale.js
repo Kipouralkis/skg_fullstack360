@@ -48,9 +48,8 @@ function ForSale() {
       {/*PropertyList */}
       <div className="wrapper">
         <Heading1 title="Houses for Sale"></Heading1>
+        <PropertyList data={result} />
       </div>
-
-      <PropertyList data={result} />
 
       <Footer />
     </div>

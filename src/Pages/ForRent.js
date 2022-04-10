@@ -47,10 +47,9 @@ function Home() {
 
       {/*PropertyList */}
       <div className="wrapper">
-        <Heading1 title="PropertyList:"></Heading1>
+        <Heading1 title="Houses for Rent:"></Heading1>
+        <PropertyList data={result} />
       </div>
-
-      <PropertyList data={result} />
 
       <Footer />
     </div>

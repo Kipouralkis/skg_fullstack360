@@ -52,9 +52,8 @@ function Home({data}) {
         {/*PropertyList */}
         <div className="wrapper">
           <Heading1 title="New Listings:"></Heading1>
+          <PropertyList data={data} />
         </div>
-
-        <PropertyList data={data} />
 
         {/* Services Section*/}
         <div className="section">

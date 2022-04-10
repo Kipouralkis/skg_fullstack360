@@ -1,25 +1,25 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+
+import React from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 
-const propertyList = ({property}) => {
-
-
+const propertyList = ({ property }) => {
   return (
-
-    <Card className='card' style={{ width: '13rem'}}>
-                <Card.Img variant="top" src={property.image} />
-                <Card.Body>
-                    <Card.Title>{property.category}</Card.Title>
-                    <Card.Text>
-                     {(property.description).slice(1,20)}
-                </Card.Text>
-                </Card.Body>  
-                <Button variant="primary">Go somewhere</Button>
-                 
-            </Card>
-  )
-}
+    <Card style={{margin:"5px", height:"460px"}}>
+      <Card.Img variant="top" src={property.image} />
+      <Card.Body>
+        <Card.Title>{property.category} {property.price}€</Card.Title>
+        <Card.Text>
+          <h6>{property.address}</h6>
+          <br></br>
+          {property.description.substr(0,100)}</Card.Text>
+      </Card.Body>
+      <Button variant="primary">View House</Button>
+    </Card>
+  );
+};
+ 
+ 
 
 export default propertyList
