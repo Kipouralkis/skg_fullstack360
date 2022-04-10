@@ -165,8 +165,6 @@ export function SearchBar(props) {
     setLoading(true);
     setNoTvShows(false);   
 
-   
-
     if (props.data) {
       console.log("Response: ", props.data);
       if (props.data && props.data.length === 0) setNoTvShows(true);
