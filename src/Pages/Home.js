@@ -10,31 +10,23 @@ import Services from "../components/Services/Services"
 import List from "../components/List/List"
 import Footer from "../components/Footer/Footer"
 
+import { SearchBar } from "../components/SearchBarTemp";
 
-import { useState, useEffect } from "react";
-import axios from "axios";
+import styled from "styled-components";
 
-function Home() {
-  const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "http://localhost:5000/api/property/all"
-        );
-        setData(response.data);
-      } catch (err) {
-        if (err.response) {
-          console.log(err.response.data);
-        } else {
-          console.log(`Error: ${err.message}`);
-        }
-      }
-    };
-    fetchData();
-  }, []);
 
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8em;
+`;
+
+
+function Home({data}) {
+  
   return (
     <div>
 
@@ -42,7 +34,10 @@ function Home() {
         <div className="header-div">
           <Header />
           <Navbar className />
-          <Searchbar /> {/* // onclick={fetchHouses}  */}
+          {/* <Searchbar /> // onclick={fetchHouses}  */}
+           <AppContainer>
+            <SearchBar data={data}/>
+           </AppContainer>
         </div>
 
         {/*CONTENT */}

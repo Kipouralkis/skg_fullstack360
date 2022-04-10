@@ -7,7 +7,7 @@ const propertyList = ({data}) => {
   return (
         <ul className="ul1">
             {data.map(property => (
-                <PropertyCard key={property.id} property={property} />
+                <PropertyCard key={property._id} property={property} />
             ))}
 
         </ul>

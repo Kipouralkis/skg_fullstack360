@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import house from './assets/house.jpg'
+
 
 const propertyList = ({property}) => {
 
@@ -9,13 +9,13 @@ const propertyList = ({property}) => {
   return (
 
     <Card className='card' style={{ width: '13rem'}}>
-                <Card.Img variant="top" src={house} />
+                <Card.Img variant="top" src={property.image} />
                 <Card.Body>
-                    <Card.Title>{property.propertytitle}</Card.Title>
+                    <Card.Title>{property.category}</Card.Title>
                     <Card.Text>
-                     {property.description}
+                     {(property.description).slice(1,20)}
                 </Card.Text>
-                </Card.Body>
+                </Card.Body>  
                 <Button variant="primary">Go somewhere</Button>
                  
             </Card>

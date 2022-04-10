@@ -1,12 +1,14 @@
 import "./App.css";
 import Home from "./Pages/Home"
 
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import ForSale from "./Pages/ForSale";
 import ForRent from "./Pages/ForRent";
+
 
 
 function App() {
@@ -32,13 +34,16 @@ function App() {
   }, []);
 
   return (
+    
     <Router>
+   
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home data={data}/>}/>
         <Route path="/for_sale" element={<ForSale />}/>
         <Route path="/for_rent" element={<ForRent />}/>
       </Routes>
     </Router>
+    
   );
 }
 
