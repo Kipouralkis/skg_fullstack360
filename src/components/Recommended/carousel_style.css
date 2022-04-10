@@ -3,10 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 #carousel-wrapper {
   padding: 50px;
+ 
+ 
 }
 
 button.rec-dot {

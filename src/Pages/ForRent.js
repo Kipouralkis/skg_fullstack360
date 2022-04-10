@@ -39,7 +39,7 @@ function Home({data}) {
 
       {/*PropertyList */}
       <div className="wrapper">
-        <Heading1 title="Houses for Rent:"></Heading1>
+        <Heading1 title="Properties for Rent"></Heading1>
         <PropertyList data={result} />
       </div>
 
