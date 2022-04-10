@@ -13,7 +13,9 @@ function Header() {
       className="fas fa-sign-hanging">
       </i></h1>
        </Link>
-      <h1>Fullstack360</h1>
+      <h1
+      style={{color: "white"}} 
+      >Fullstack360</h1>
       <form onSubmit="console.log('You clicked submit.'); return false">
       <FaSignInAlt />
       

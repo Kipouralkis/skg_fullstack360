@@ -8,11 +8,9 @@ import Footer from "../components/Footer/Footer";
 import { SearchBar } from "../components/SearchBarTemp";
 import styled from "styled-components";
 
-import LandpageProp from "../components/landingProperty/landpageProp";
 
 
-
-function Home({data}) {
+function ForRent({data}) {
   
   const AppContainer = styled.div`
   width: 100%;
@@ -46,9 +44,9 @@ function Home({data}) {
       </div>
 
       <Footer />
-      <LandpageProp data={data}/>
+      
     </div>
   );
 }
 
-export default Home;
+export default ForRent;
