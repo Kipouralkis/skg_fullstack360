@@ -39,8 +39,8 @@ function App() {
    
       <Routes>
         <Route path="/" element={<Home data={data}/>}/>
-        <Route path="/for_sale" element={<ForSale data={data} />}/>
-        <Route path="/for_rent" element={<ForRent data={data} />}/>
+        <Route path="/sale" element={<ForSale data={data} />}/>
+        <Route path="/rent" element={<ForRent data={data} />}/>
       </Routes>
     </Router>
     
