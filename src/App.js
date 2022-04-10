@@ -98,7 +98,6 @@ function App() {
     },
     {
       id: '9',
-      var temp = previousValue,
       triger: '9',
     },
   ]}
