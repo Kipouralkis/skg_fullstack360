@@ -9,8 +9,11 @@ import axios from "axios";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import ForSale from "./Pages/ForSale";
 import ForRent from "./Pages/ForRent";
+<<<<<<< HEAD
 import LandpageProp from "./components/landingProperty/landpageProp";
 // import Chatbot from 'react-simple-chatbot';
+=======
+>>>>>>> d5cd4ab23f4d75f042b7f7f7f98e77d0dc3466ba
 
 
 function App() {
@@ -51,6 +54,7 @@ function App() {
                   
         
       </Routes>
+<<<<<<< HEAD
       {/* <Chatbot
   steps={[
     {
@@ -113,6 +117,8 @@ function App() {
     },
   ]}
 /> */}
+=======
+>>>>>>> d5cd4ab23f4d75f042b7f7f7f98e77d0dc3466ba
     </Router>
     
   );
