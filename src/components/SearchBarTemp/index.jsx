@@ -231,7 +231,7 @@ export function SearchBar(props) {
           )}
           {!isLoading && !isEmpty && (
             <>
-              {tvShows.filter(property => (property.category).includes(searchQuery) || (property.description).includes(searchQuery) ).map(property =>  (
+              {tvShows.filter(property => (property.category).includes(searchQuery) || (property.description).includes(searchQuery) || (property.city).includes(searchQuery)|| (property.for).includes(searchQuery)).map(property =>  (
                 <TvShow
                   key={property._id}
                   thumbanilSrc={property.image}

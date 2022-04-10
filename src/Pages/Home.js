@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../components/Header/Header"
 import Navbar from "../components/Navbar/Navbar"
-import Searchbar from "../components/SearchBar/SearchBar"
+
 import Carousel from "../components/Recommended/Carousel"
 import Heading1 from "../components/Headings/Heading1"
 import Heading2 from "../components/Headings/Heading2" 

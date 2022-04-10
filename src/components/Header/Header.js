@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
+import { FaSignInAlt } from "react-icons/fa";
 import "./Header.css";
 import { Outlet, Link } from "react-router-dom";
 
@@ -15,7 +15,9 @@ function Header() {
        </Link>
       <h1>Fullstack360</h1>
       <form onSubmit="console.log('You clicked submit.'); return false">
-        <button type="submit">Login</button>
+      <FaSignInAlt />
+      
+        
       </form>
     </div>
   );
