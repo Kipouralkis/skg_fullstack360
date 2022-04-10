@@ -9,10 +9,10 @@ function Card2({ property }) {
       <div className="card">
         <img src={property.image} alt="" className="card-image" />
         <div className="card-img-overlay">
-          <h5 className="card-title">
+          <h5 className="rec-card-title">
             {property.category} {property.address}
           </h5>
-          <p className="card-text">
+          <p className="rec-card-text">
             {property.price} € for {property.for}<br></br>
             {property.description.substr(0, 33)}
           </p>
