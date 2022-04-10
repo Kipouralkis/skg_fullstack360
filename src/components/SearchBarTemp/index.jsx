@@ -238,6 +238,9 @@ export function SearchBar(props) {
                   thumbanilSrc={property.image}
                   name={property.category}
                   rating={property.price}
+                  address={property.address}
+                  city={property.city}
+                  description={property.description}
                 />
               ))}
             </>

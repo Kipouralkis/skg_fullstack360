@@ -9,7 +9,8 @@ import axios from "axios";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import ForSale from "./Pages/ForSale";
 import ForRent from "./Pages/ForRent";
-import Chatbot from 'react-simple-chatbot';
+import LandpageProp from "./components/landingProperty/landpageProp";
+// import Chatbot from 'react-simple-chatbot';
 
 
 function App() {
@@ -42,8 +43,15 @@ function App() {
         <Route path="/" element={<Home data={data}/>}/>
         <Route path="/sale" element={<ForSale data={data} />}/>
         <Route path="/rent" element={<ForRent data={data} />}/>
+        <Route path="/property/:id" element={ <LandpageProp data={data} />}/>
+
+         
+
+        
+                  
+        
       </Routes>
-      <Chatbot
+      {/* <Chatbot
   steps={[
     {
       id: '1',
@@ -104,7 +112,7 @@ function App() {
       triger: '9',
     },
   ]}
-/>
+/> */}
     </Router>
     
   );

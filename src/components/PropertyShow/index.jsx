@@ -36,9 +36,26 @@ const Rating = styled.span`
   display: flex;
   flex: 0.2;
 `;
+const City = styled.h3`
+  font-size: 15px;
+  color: #000;
+  margin-left: 10px;
+  flex: 2;
+  display: flex;
+`;
+const Address = styled.h3`
+  font-size: 15px;
+  color: #000;
+  margin-left: 10px;
+  flex: 2;
+  display: flex;
+`;
+
+
+
 
 export function TvShow(props) {
-  const { thumbanilSrc, name, rating } = props;
+  const { thumbanilSrc, name, rating, address, city } = props;
 
   return (
     <TvShowContainer>
@@ -46,6 +63,8 @@ export function TvShow(props) {
         <img src={thumbanilSrc} />
       </Thumbnail>
       <Name>{name}</Name>
+      <City>{city}</City>
+      <Address>{address}</Address>
       <Rating>{rating || "N/A"} euro</Rating>
     </TvShowContainer>
   );
