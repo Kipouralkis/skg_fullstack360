@@ -19,7 +19,6 @@ function Header() {
       <form onSubmit="console.log('You clicked submit.'); return false">
       <FaSignInAlt />
       
-        
       </form>
     </div>
   );
