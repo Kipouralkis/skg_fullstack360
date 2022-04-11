@@ -8,6 +8,9 @@ import FormHelperText from '@mui/material/FormHelperText';
 import Checkbox from '@mui/material/Checkbox';
 import PropertyList from "../propertyList";
 
+import Header from "../Header/Header";
+import Navbar from "../Navbar/Navbar"
+
 const CheckboxesGroup = ({data}) => {
 
     const [state, setState] = React.useState({
@@ -34,11 +37,11 @@ const CheckboxesGroup = ({data}) => {
 
   return (
 
- 
-
-
- 
+    <>
+    <Header/>
+    <Navbar/>
     <Box sx={{ display: 'flex' }}>
+    
       <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
         <FormLabel component="legend">Φίλτρα αναζήτησης</FormLabel>
         <FormGroup>
@@ -74,6 +77,7 @@ const CheckboxesGroup = ({data}) => {
      {state.thessaloniki === true && <PropertyList data={Thessaloniki} /> }
     {state.athina === true && <PropertyList data={Athina} /> }
     </Box>
+    </>
     
  
   )
