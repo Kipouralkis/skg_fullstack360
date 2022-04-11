@@ -89,10 +89,11 @@ function Home({ data }) {
       </div>
 
       <Chatbot
+        speechSynthesis={{ enable: true, lang: "en" }}
         steps={[
           {
             id: "1",
-            message: "Hello! What is your name?",
+            message: "What is your name?",
             trigger: "2",
           },
           {
@@ -103,9 +104,56 @@ function Home({ data }) {
           {
             id: "3",
             message:
-              "Hi {previousValue}, how can i help you? Do you want a house for sale or for rent?",
-            end: true,
+              "Hi {previousValue}, nice to meet you! Would you like a house for sale or for rent?",
+            trigger: "4",
           },
+          {
+            id: "4",
+            options: [
+              { value: "sale", label: "for sale", trigger: "6" },
+              { value: "rent", label: "for rent", trigger: "5" },
+            ],
+          },
+          {
+            id: "5",
+            message: "In what price range are you looking to rent?",
+            trigger: "7",
+          },
+          {
+            id: "6",
+            message: "In what price range are you looking to buy?",
+            trigger: "7",
+          },
+          {
+            id: "7",
+            user: true,
+            trigger: "8",
+          },
+          {
+            id: "8",
+            message: "How many square meters?",
+            trigger: "9",
+          },
+          {
+            id: "9",
+            options: [
+              { value: 25, label: "25", trigger:'10' },
+              { value: 30, label: "30", trigger:'10' },
+              { value: 40, label: "40", trigger:'10' },
+              { value: 50, label: "50", trigger:'10' },
+              { value: 60, label: "60", trigger:'10' },
+              { value: 70, label: "70", trigger:'10' },
+            ],
+          },
+          {
+            id:'10',
+            message: 'Searching houses for you...: ',
+            end:true,
+          },
+          /*  {
+            id: '9',
+            triger: '9',
+          },*/
         ]}
       />
       <Footer />
