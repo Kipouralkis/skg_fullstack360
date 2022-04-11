@@ -40,6 +40,7 @@ function ForSale({data}) {
       {/*PropertyList */}
       <div className="wrapper">
         <Heading1 title="Properties for Sale"></Heading1>
+        <div style={{padding:"30px"}}></div>
         <PropertyList data={result} />
       </div>
 

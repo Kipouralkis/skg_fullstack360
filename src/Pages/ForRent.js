@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 
 
-function ForRent({data}) {
+function Home({data}) {
   
   const AppContainer = styled.div`
   width: 100%;
@@ -40,13 +40,13 @@ function ForRent({data}) {
       {/*PropertyList */}
       <div className="wrapper">
         <Heading1 title="Properties for Rent"></Heading1>
+        <div style={{padding:"30px"}}></div>
         <PropertyList data={result} />
       </div>
 
       <Footer />
-      
     </div>
   );
 }
 
-export default ForRent;
+export default Home;
