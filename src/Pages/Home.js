@@ -88,26 +88,27 @@ function Home({ data }) {
         <List />
       </div>
 
-      <Footer />
       <Chatbot
-  steps={[
-    {
-      id: '1',
-      message: 'What is your name?',
-      trigger: '2',
-    },
-    {
-      id: '2',
-      user: true,
-      trigger: '3',
-    },
-    {
-      id: '3',
-      message: 'Hi {previousValue}, nice to meet you!',
-      end: true,
-    },
-  ]}
-/>
+        steps={[
+          {
+            id: "1",
+            message: "Hello! What is your name?",
+            trigger: "2",
+          },
+          {
+            id: "2",
+            user: true,
+            trigger: "3",
+          },
+          {
+            id: "3",
+            message:
+              "Hi {previousValue}, how can i help you? Do you want a house for sale or for rent?",
+            end: true,
+          },
+        ]}
+      />
+      <Footer />
     </div>
   );
 }
