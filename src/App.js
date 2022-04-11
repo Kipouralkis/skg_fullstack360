@@ -9,8 +9,7 @@ import axios from "axios";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import ForSale from "./Pages/ForSale";
 import ForRent from "./Pages/ForRent";
-
-import LandpageProp from "./components/landingProperty/landpageProp";
+import HousePage from "./Pages/HousePage";
 
 
 
@@ -44,7 +43,7 @@ function App() {
         <Route path="/" element={<Home data={data}/>}/>
         <Route path="/sale" element={<ForSale data={data} />}/>
         <Route path="/rent" element={<ForRent data={data} />}/>
-        <Route path="/property/:id" element={ <LandpageProp data={data} />}/>                 
+        <Route path="/property/:id" element={ <HousePage data={data} />}/>                 
         
       </Routes>
 
