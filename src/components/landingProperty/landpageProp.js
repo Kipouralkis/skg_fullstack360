@@ -1,8 +1,8 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./landpageProp.css";
 import Card from "react-bootstrap/Card";
-import house from "../assets/house.jpg";
+
 
 const LandpageProp = ({ data }) => {
   const { id } = useParams();

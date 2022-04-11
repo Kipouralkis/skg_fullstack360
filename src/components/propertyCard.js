@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import {Link} from 'react-router-dom';
 import LandpageProp from "./landingProperty/landpageProp";
+import house from "./assets/house.jpg";
 
 
 
@@ -14,7 +15,9 @@ const propertyList = ({ property }) => {
     component={<LandpageProp/>}
     >
     <Card style={{margin:"5px", height:"460px"}}>
-      <Card.Img variant="top" src={property.image} />
+       {!property.image && <Card.Img variant="top" src={house} /> }
+          {property.image && <Card.Img variant="top" src={property.image} /> }
+      
       <Card.Body>
         <Card.Title>{property.category} {property.price}€</Card.Title>
         <Card.Text>

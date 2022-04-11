@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from "react-router-dom";
+import LandpageProp from "../landingProperty/landpageProp";
+import house from "../assets/house.jpg";
 
 const TvShowContainer = styled.div`
   width: 100%;
@@ -17,8 +20,10 @@ const Thumbnail = styled.div`
   flex: 0.4;
 
   img {
-    width: auto;
-    height: 100%;
+    width: 150px;
+    height: 90px;
+    border-radius: 10px;
+  padding: 5px;
   }
 `;
 
@@ -55,13 +60,16 @@ const Address = styled.h3`
 
 
 export function TvShow(props) {
-  const { thumbanilSrc, name, rating, address, city } = props;
+  const { thumbanilSrc, name, rating, address, city, id } = props;
 
   return (
     <TvShowContainer>
-      <Thumbnail>
-        <img src={thumbanilSrc} />
-      </Thumbnail>
+        <Link to={`/property/${id}`} component={<LandpageProp/>}>
+          <Thumbnail>
+           {!thumbanilSrc && <img src={house}/> }
+          {thumbanilSrc && <img src={thumbanilSrc} alt={{id}}/>}
+          </Thumbnail>
+      </Link>
       <Name>{name}</Name>
       <City>{city}</City>
       <Address>{address}</Address>

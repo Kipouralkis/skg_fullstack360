@@ -235,6 +235,7 @@ export function SearchBar(props) {
               {tvShows.filter(property => (property.category).includes(searchQuery) || (property.description).includes(searchQuery) || (property.city).includes(searchQuery)|| (property.for).includes(searchQuery)).map(property =>  (
                 <TvShow
                   key={property._id}
+                  id={property._id}
                   thumbanilSrc={property.image}
                   name={property.category}
                   rating={property.price}
