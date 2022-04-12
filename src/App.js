@@ -10,6 +10,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import ForSale from "./Pages/ForSale";
 import ForRent from "./Pages/ForRent";
 import HousePage from "./Pages/HousePage";
+import Filter from "./components/filter/filter";
 
 
 
@@ -43,6 +44,7 @@ function App() {
         <Route path="/" element={<Home data={data}/>}/>
         <Route path="/sale" element={<ForSale data={data} />}/>
         <Route path="/rent" element={<ForRent data={data} />}/>
+        <Route path="/filter" element={<Filter data={data} />}/>
         <Route path="/property/:id" element={ <HousePage data={data} />}/>                 
         
       </Routes>
