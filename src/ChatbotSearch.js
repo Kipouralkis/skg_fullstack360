@@ -8,7 +8,6 @@ import styled from 'styled-components';
 const theme = {
   background: "#f5f8fb",
   headerBgColor: "var(--main-color)",
-  headerFontColor: "#fff",
   headerFontSize: "15px",
   botBubbleColor: "var(--green-blue)",
   botFontColor: "#fff",
@@ -20,7 +19,9 @@ const config ={
     width: "400px",
     height: "500px",
     floating: true,
+    headerTitle: 'oxi chatbot',
   };
+
 
 //END OF THEME //
 
