@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Chatbot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
-import DoSearch from "./Search"
+import DoSearch from "./Search";
+import GetData from "./GetData";
+import { buttonBaseClasses } from "@mui/material";
 
 //THEME //
 
@@ -17,18 +19,16 @@ const theme = {
   userFontColor: "#4a4a4a",
 };
 
-const config ={
-    width: "400px",
-    height: "500px",
-    floating: true,
-    headerTitle: 'FullStack360',
-  };
-
+const config = {
+  width: "400px",
+  height: "500px",
+  floating: true,
+  headerTitle: "FullStack360",
+};
 
 //END OF THEME //
 
 class Search extends Component {
-  
   constructor(props) {
     super(props);
 
@@ -46,14 +46,19 @@ class Search extends Component {
     this.setState({ to, price, city });
   }
 
+  exportvalues() {
+    return this.state;
+  }
+
   render() {
     const { to, price, city } = this.state;
 
-    //checking values 
-    console.log(this.state.city.value);
-    console.log(this.state.to.value);
-    console.log(this.state.price.value);
+    //checking values
+    //console.log(this.state.city.value);
+    //console.log(this.state.to.value);
+    //console.log(this.state.price.value);
 
+    //<GetData data={this.state} />
 
     return (
       <div style={{ width: "100%" }}>
@@ -76,7 +81,11 @@ class Search extends Component {
             </tr>
           </tbody>
         </table>
+        <a href="/rent" onClick={<GetData data={this.state} />}>
+          Click me
+        </a>
       </div>
+      //trying to pass variables to another component
     );
   }
 }
