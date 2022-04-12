@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-/*
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -8,14 +8,10 @@ import {
   faTwitter,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
-*/
 
 function Footer() {
     return (
-      <div className='footer'>
-        sorry den mou etrexe
-      </div>
-      /*
+     
         <div className='footer'>
             <p>&copy; Created by FullStack360</p>
             <a href="https://www.youtube.com/"
@@ -37,7 +33,6 @@ function Footer() {
         <FontAwesomeIcon icon={faInstagram} />
       </a>
      </div>
-     */
     );
 }
 
