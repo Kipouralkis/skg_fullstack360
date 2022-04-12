@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Chatbot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
-import styled from 'styled-components';
+import DoSearch from "./Search"
 
 //THEME //
 
@@ -49,6 +49,13 @@ class Search extends Component {
 
   render() {
     const { to, price, city } = this.state;
+
+    //checking values 
+    console.log(this.state.city.value);
+    console.log(this.state.to.value);
+    console.log(this.state.price.value);
+
+
     return (
       <div style={{ width: "100%" }}>
         <p>
@@ -144,10 +151,6 @@ class SimpleForm extends Component {
               component: <Search />,
               end: true,
             },
-            /*  {
-            id: '9',
-            triger: '9',
-          },*/
           ]}
           {...config}
         />

@@ -15,7 +15,7 @@ import { SearchBar } from "../components/SearchBarTemp";
 
 import styled from "styled-components";
 
-import ChatbotSearch from "../ChatbotSearch"
+import ChatbotSearch from "../Chatbot/ChatbotSearch"
 
 const AppContainer = styled.div`
   width: 100%;
