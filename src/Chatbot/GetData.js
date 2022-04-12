@@ -39,6 +39,7 @@ function GetData(properties) {
     //filter the data and console log
     const result = data.filter((d) => d.for === rentSale);
     console.log(result);
+    console.log("!!!");
 
 }
 
