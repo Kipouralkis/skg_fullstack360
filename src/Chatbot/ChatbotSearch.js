@@ -82,7 +82,7 @@ class Search extends Component {
           </tbody>
         </table>
         <a href="/rent" onClick={<GetData data={this.state} />}>
-          Click me
+          Click here to see your results
         </a>
       </div>
       //trying to pass variables to another component
