@@ -22,7 +22,9 @@ const config ={
     width: "400px",
     height: "500px",
     floating: true,
+    headerTitle: 'FullStack360',
   };
+
 
 //END OF THEME //
 
