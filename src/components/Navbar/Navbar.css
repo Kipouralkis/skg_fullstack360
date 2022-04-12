@@ -1,7 +1,7 @@
 .NavbarItems {
     /*background: linear-gradient(90deg, rgb(178, 173, 219) 0%, rgb(116, 112, 189) 100%);*/
     background: linear-gradient(180deg, rgb(240, 248, 255) 0%, rgba(116, 112, 189, 0) 100%);
-    margin-top: 5.5%;
+    margin-top: 4%;
     height: 80px;
     display: flex;
     justify-content: left;
