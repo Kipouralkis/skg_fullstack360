@@ -8,8 +8,7 @@ import styled from 'styled-components';
 
 const theme = {
   background: "var(--light-shades)",
-  headerTitle: "Test",
-  headerBgColor: "var(--dark)",
+  headerBgColor: "var(--test)",
   headerFontColor: "#f3f6fc",
   headerFontSize: "20px",
   botBubbleColor: "var(--gray-blue)",
