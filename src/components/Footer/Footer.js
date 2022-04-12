@@ -11,7 +11,7 @@ import {
 function Footer() {
     return (
         <div className='footer'>
-            <p>&copy; Created by team FullStack360</p>
+            <p>&copy; Created by FullStack360</p>
             <a href="https://www.youtube.com/"
         className="youtube social"
       >

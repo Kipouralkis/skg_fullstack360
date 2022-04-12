@@ -5,14 +5,16 @@ import { ThemeProvider } from "styled-components";
 import styled from 'styled-components';
 
 //THEME //
+
 const theme = {
-  background: "#f5f8fb",
-  headerBgColor: "var(--main-color)",
-  headerFontColor: "#fff",
-  headerFontSize: "15px",
-  botBubbleColor: "var(--green-blue)",
-  botFontColor: "#fff",
-  userBubbleColor: "#fff",
+  background: "var(--light-shades)",
+  headerTitle: "Test",
+  headerBgColor: "var(--dark)",
+  headerFontColor: "#f3f6fc",
+  headerFontSize: "20px",
+  botBubbleColor: "var(--gray-blue)",
+  botFontColor: "#f3f6fc",
+  userBubbleColor: "#f3f6fc",
   userFontColor: "#4a4a4a",
 };
 
@@ -25,6 +27,7 @@ const config ={
 //END OF THEME //
 
 class Search extends Component {
+  
   constructor(props) {
     super(props);
 
@@ -52,7 +55,7 @@ class Search extends Component {
         <table>
           <tbody>
             <tr>
-              <td>for</td>
+              <td>for </td>
               <td>{to.value}</td>
             </tr>
             <tr>
@@ -60,7 +63,7 @@ class Search extends Component {
               <td> {price.value}€</td>
             </tr>
             <tr>
-              <td>in</td>
+              <td>in </td>
               <td>{city.value}</td>
             </tr>
           </tbody>
