@@ -8,8 +8,6 @@
 
 #carousel-wrapper {
   padding: 50px;
- 
- 
 }
 
 button.rec-dot {
@@ -31,7 +29,7 @@ button.rec-dot {
 }
 
 .rec.rec-arrow:hover {
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .h2 {
